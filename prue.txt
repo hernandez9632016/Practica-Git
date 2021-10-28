@@ -1,1 +1,20 @@
-linea prueba 1
+git config
+Este comando puede ser usado para establecer una configuración específica de usuario, como email, nombre de usuario y tipo de formato, etc. Esto a nivel de un proyecto global o local.
+
+Ejemplo: el siguiente comando se usa para establecer un email.
+(git config --global user.email email@ejemplo.com)
+Con el anterior comando GIT utilizara ese correo electrónico para todos los repositorios locales.
+
+git diff 
+Este comando se usa para hacer una lista de conflictos. Para poder ver conflictos con respecto al archivo base, cuando se ejecuta, lleva a cabo una función para establecer las diferencias en los orígenes de datos de Git. Dichos orígenes de datos pueden ser confirmaciones, ramas y archivos, entre otras posibilidades.
+
+Ejemplo: el siguiente comando se usa para ver los conflictos que hay entre ramas antes de fusionarlas.
+(git diff <source-branch> <target-branch>)
+A continuación para ver una lista de todos los conflictos presentes se utiliza el comando:
+(git diff)
+
+
+
+Git Fork
+Este comando sirve para crear una copia exacta del repositorio original, esto en lugar de crear un clon del repositorio en la maquina local, cuando se hace un fork de un repositorio, este crea un nuevo repositorio en tu cuenta de Github, con una URL diferente (fork). Posteriormente se tendría que realizar un clon de esa copia sobre la que comenzarías a trabajar de forma que cuando se realiza el push, se estaria modificando la copia del fork, de esta forma el repositorio original sigue intacto.
+Cómo funciona: cuando un usario solo tiene permisos de lectura pero no de escritura sobre un repositorio, podrá clonar el repositorio (porque es público) pero no podrá hacer un push, por lo tanto deberá realizar un FORK, esto le permitirá modificarlo de forma local manteniendo el archivo original y crear nuevos branch.
